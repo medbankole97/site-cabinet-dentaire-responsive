@@ -344,7 +344,8 @@ span {
 #Live-history .history img {
     width: 450px;
     margin-top: 50px;  
-    padding-right: 50px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 #Live-history .history div {
     width: 500px;
@@ -819,36 +820,7 @@ footer{
   .appoint{
     color: #FFD700;
   }
-  /* button{
-    cursor: pointer;
-  } */
 
-  /* pages login */
-  /* #Login{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-  }
-  #Login form{
-    width: 700px;
-   
-  }
-  #Login form{
-    display: block;
-    margin-bottom: 5px;
-    gap: 20px;
-  }
-#Login input[type="text"],
-#Login input[type="email"]
-
-{
-    height: 40px;
-    border-radius: 5px;
-    border: 1px solid var(--primary);
-    width: 100%;
-    margin-bottom: 10px;
-} */
 #Login{
     display: flex;
     justify-content: center;
@@ -860,7 +832,7 @@ footer{
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    max-width: 513gipx;
+    max-width: 513px;
     width: 100%;
 }
 
@@ -943,4 +915,117 @@ input[type="email"], input[type="password"] {
 
 .signup a:hover {
     text-decoration: underline;
+}
+
+
+/* mediaqueries responsivité */
+/* @media (max-width: 1200px) {
+    .header {
+      padding: 2rem 5%;
+    }
+    section {
+      padding: 3rem 5%;
+    }
+  }
+  
+  @media (max-width: 991px) {
+    html {
+      font-size: 55%;
+    }
+    .header {
+      padding: 2rem;
+    }
+    section {
+      padding: 3rem 2rem;
+    }
+  }
+   */
+   @media ( max-width:964px) {
+    .header {
+        flex-direction: column;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .principal {
+        flex-direction: column;
+        padding: 12px;
+        height: fit-content;
+       
+    }
+    
+    #home .left h1 {
+            font-size: 25px;
+            /* margin-bottom: 15px; */
+        }
+    #home .left p{
+            font-size: 13px;
+            margin-bottom: 15px;
+        }
+    #home .image img {
+            width: 100%;
+            padding: 0;
+        }
+        /* #home .left {
+            margin: 100px 0;
+        }     */
+    #services .content-service img[alt="doctor-prince"]{
+        width: 100%;
+        padding: 0;
+    }
+
+    .servs {
+        flex-direction: column;
+        /* text-align: center; */
+    }
+
+    .servs .right {
+        flex-direction: column;
+    }
+    #services .content-service {
+        display: flex;
+        flex-direction: column;
+    }
+    .content-service .chield {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .content-service .chield .title{
+        
+    }
+    #about-us .contener{
+        display: flex;
+        flex-direction: column;
+    }
+    #Live-history .history{
+        display: flex;
+        flex-direction: column;
+    }
+    #Live-history .history img{
+        width: 90%;
+        margin: 0 auto;
+    }
+    #Live-history .history div{
+        width: 90%;
+        margin: 30px auto;
+    }
+    
+    #docteur .doctors {
+        flex-direction: column;
+       
+    }
+    #renseigner .contener{
+        flex-direction: column;
+    }
+    #renseigner .contener form {
+        display: flex;
+        flex-direction: column;
+    }
+    #renseigner .contener form label{
+        
+    }
 }
