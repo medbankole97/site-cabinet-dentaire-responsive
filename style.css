@@ -1035,7 +1035,7 @@ input[type="email"], input[type="password"] {
     }
     #subscribes .subscribe h2{
         font-size: 16px;
-    }
+    }g
     #content .contents{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
